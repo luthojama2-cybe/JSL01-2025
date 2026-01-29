@@ -1,0 +1,55 @@
+:root{
+    --btn-primary: #635FC7;
+    --btn-primary-hvr: #A8A4FF;
+    --btn-secondary: #F4F7FD;
+    --btn-secondary-hvr: #828FA3;
+    --btn-destructive: #EA5555;
+    --btn-destructive-hvr: #FF9898;
+
+    --placeholder: #6c6969;
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E4EBFA;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: em;
+}
+
+/*Navigation side-bar*/
+
+.navigation{
+    max-width: 30%;
+    padding: 2em;
+    background-color: #FFFF;
+}
+
+/*Main content*/
+
+main{
+    padding: 2em;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    padding: 2em;
+    background-color: #FFFF;
+}
+
+.main-content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
