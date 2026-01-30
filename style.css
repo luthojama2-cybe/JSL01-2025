@@ -17,3 +17,35 @@
     box-sizing: border-box;
 }
 
+.wrapper{
+    display: flex;
+    gap: 1.5em;
+    padding: 1em;
+}
+
+/*Navigation*/
+
+.navigation{
+    height: 100vh;
+}
+
+.navigation img{
+    width: 70%;
+}
+
+.navigation h4{
+    padding-top: 2em;
+}
+
+.navigation button{
+    margin-top: 1em;
+}
+
+/*Main-content*/
+
+.main-content-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
