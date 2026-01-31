@@ -9,6 +9,15 @@
     --placeholder: #6c6969;
 }
 
+@font-face {
+    font-family: jakara;
+    src: url(./font/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: jakarta, sans-serif;
+}
+
 *,
 ::before,
 ::after{
@@ -25,12 +34,8 @@
 
 /*Navigation*/
 
-.navigation{
-    height: 100vh;
-}
-
 .navigation img{
-    width: 70%;
+    max-width: 70%;
 }
 
 .navigation h4{
@@ -41,11 +46,20 @@
     margin-top: 1em;
 }
 
+/*Header*/
+
+header{
+    padding: .4em;
+    font-size: 1.5rem;
+}
+
 /*Main-content*/
 
 .main-content-wrapper{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+
 
 
