@@ -34,16 +34,23 @@ body{
 
 /*Navigation*/
 
+.navigation{
+    border-right: 1px solid #808080;
+    height: 99vh;
+}
+
 .navigation img{
     max-width: 70%;
 }
 
 .navigation h4{
     padding-top: 2em;
+    color: var(--btn-secondary-hvr);
 }
 
 .navigation button{
     margin-top: 1em;
+    padding: 1em;
 }
 
 /*Header*/
@@ -56,8 +63,32 @@ header{
 /*Main-content*/
 
 .main-content-wrapper{
+    padding-right: 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.main-content-wrapper h4{
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--btn-secondary-hvr);
+}
+
+
+.to-doList{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.to-doList div{
+    padding: 1.5em;
+    border: 1px solid #000;
+    box-shadow: 5px 10px #808080;
+    border-radius: 10px;
 }
 
 
