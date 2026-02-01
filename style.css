@@ -98,7 +98,7 @@ header{
 .to-doList div{
     padding: 1.5em;
     border: 1px solid #000;
-    box-shadow: 5px 10px #808080;
+    box-shadow: 2px 4px #808080;
     border-radius: 10px;
 }
 
