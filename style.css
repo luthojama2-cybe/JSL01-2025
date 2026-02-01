@@ -43,6 +43,10 @@ body{
     max-width: 70%;
 }
 
+.navigation .secondLogo{
+    display: none;
+}
+
 .navigation h4{
     padding-top: 2em;
     color: var(--btn-secondary-hvr);
@@ -51,6 +55,14 @@ body{
 .navigation button{
     margin-top: 1em;
     padding: 1em;
+    width: 80%;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--btn-primary);
 }
 
 /*Header*/
@@ -76,7 +88,6 @@ header{
     color: var(--btn-secondary-hvr);
 }
 
-
 .to-doList{
     display: flex;
     flex-direction: column;
@@ -89,6 +100,57 @@ header{
     border: 1px solid #000;
     box-shadow: 5px 10px #808080;
     border-radius: 10px;
+}
+
+
+@media (max-width: 380px) {
+
+    .wrapper{
+        position: relative;
+    }
+
+    /*Navigation*/
+
+    .navigation{
+        border-right: none;
+        height: fit-content;
+        position: absolute;
+    }
+
+   .navigation img{
+    display: none;
+   }
+  .navigation .secondLogo{
+    display: block;
+    width: 30%;
+}
+   .navigation button{
+    display: none;
+   }
+
+   /*Header*/
+
+   header h2{
+    font-size: .8em;
+    margin-left: 2.5em;
+   }
+
+   /*Main-Content*/
+    .main-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #808080;
+    }
+
+    .main-content-wrapper h4{
+        margin-top: 2em;
+    }
+
+   .to-doList div{
+    padding: 1em;
+    margin: 0 1em;
+   }
 }
 
 
